@@ -1,0 +1,35 @@
+<diagram program="umletino" version="15.1"><zoom_level>10</zoom_level><help_text>Space for diagram notes</help_text><element><id>UMLClass</id><coordinates><x>40</x><y>0</y><w>230</w><h>150</h></coordinates><panel_attributes>
+BloquesInicializacion
+--
+
+-+main(args:String[[):void-
+--</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>420</x><y>0</y><w>280</w><h>190</h></coordinates><panel_attributes>Alumno
+--
+-curso:String 
+-sesion:byte
+-objetivo:String
+--
++getCurso():String
++getSesion():byte
++getObjetivo():String 
+
++setCurso(curso:String):void
++setSesion(sesion:byte):void
++setObjetivo(objetivo:String):void
+--
+
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>260</x><y>30</y><w>180</w><h>40</h></coordinates><panel_attributes>lt=&lt;..
+usa</panel_attributes><additional_attributes>160;20;10;20</additional_attributes></element><element><id>UMLClass</id><coordinates><x>10</x><y>220</y><w>330</w><h>210</h></coordinates><panel_attributes>Automovil
+--
+-marca:String
+-model:String
+-anioFabricacion:int
+-kilometraje:int
+--
++Automovil(String, String, int, int)
++hashCode():int
+
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLNote</id><coordinates><x>370</x><y>260</y><w>400</w><h>60</h></coordinates><panel_attributes>El +Automovil es un constructor para no poner los set &amp; get
+bg=blue</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLNote</id><coordinates><x>350</x><y>430</y><w>140</w><h>70</h></coordinates><panel_attributes>Note..
+bg=blue</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLNote</id><coordinates><x>380</x><y>330</y><w>340</w><h>70</h></coordinates><panel_attributes>hashCode permite comparar objetos con otros objetos pero hace que estos no sean iguales 
+bg=blue</panel_attributes><additional_attributes></additional_attributes></element></diagram>

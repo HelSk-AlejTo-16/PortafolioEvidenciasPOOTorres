@@ -1,0 +1,51 @@
+<diagram program="umletino" version="15.1"><zoom_level>10</zoom_level><element><id>UMLClass</id><coordinates><x>50</x><y>0</y><w>480</w><h>260</h></coordinates><panel_attributes>Automovil
+--
+-marca:String
+-modelo:String
+-anioFabricacion:int
+-kilometraje:int
+-llantas:Llanta[]
+-combustible:Combustible
+--
+
+...
++colocaLlantas(Llanta, Llanta, Llanta, Llanta)
++llenarTanque():void
++avanzar():void
+
++setCombustible(Combustible):void </panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>40</x><y>390</y><w>190</w><h>190</h></coordinates><panel_attributes>Combustible
+--
+-litrosMaximos:short
+-litrosActuales:short
+--
++getLitrosMaximos():short
++getLitrosActuales():short
+
++setLitrosMaximos(short):void
++setLitrosActuales(short):void
+
++usar():void
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>310</x><y>380</y><w>220</w><h>270</h></coordinates><panel_attributes>Llanta
+--
+-ancho:float
+-diametro:float
+-presion:float
+--
++getAncho():float
++getDiametro():float
++getPresion():float
+
++setAncho(float):void
++setDiametro(float):void
++setPresion(float):void
+
++rodar():void</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>170</x><y>250</y><w>60</w><h>160</h></coordinates><panel_attributes>lt=&lt;-
+tiene
+m1=1
+m2=1
+
+</panel_attributes><additional_attributes>10;140;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>360</x><y>250</y><w>60</w><h>150</h></coordinates><panel_attributes>lt=&lt;-
+tiene
+
+m2=1
+m1= 0...4</panel_attributes><additional_attributes>10;130;20;10</additional_attributes></element></diagram>
